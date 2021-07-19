@@ -56,6 +56,7 @@ int main() {
                 img.at<Vec3b>(y, x)[1] = 255;
                 img.at<Vec3b>(y, x)[2] = 0;
             }
+            // 对大于该灰度阈值的点进行计数
             if (whole.at<Vec3b>(y, x)[0] >= threshold_value)
                 num2++;
         }
